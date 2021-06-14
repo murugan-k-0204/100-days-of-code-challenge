@@ -1,0 +1,40 @@
+
+Let V = lbh         ---1
+p = 4(l+b+h)        ---2
+s = 2(lb + bh + hl) ---3
+
+eqn 3 becomes 
+  lb = (s/2)-bh-hl
+  lb = (s/2)-h(l+b)          ----4
+
+eqn 2 becomes 
+  p/4 = l+b+h
+  l+b = p/4 -h               ----5
+  
+substitute eqn 5 in 4
+  lb = (s/2) - h (p/4 - h)
+  lb = (s/2) - ph/2 -h*h      ---6 
+
+substitute eqn 6 in 1 
+  V = ((s/2) - ph/2 - h*h) * h  ---7
+here s and p are constants
+
+differentiate eqn 7 with respect to h
+we get
+  f'(V) = s/2 - 2h(p/4 - h) +h*h
+  
+To find local Maximum
+
+  f'(V) = 0
+  h*h -2h(p/4 - h) +s/2 = 0
+  h^2 - 2hp/2 + 2h^2 +s/2 = 0
+  3h^2 - hp/2 + s/2 = 0
+  
+  to find the roots we use
+  h = (-b +- sqrt(b*b - 4ac))/2a
+  
+  Sorry guys,
+  i will edit and complete it later.
+  
+  we get 
+  h = (p + sqrt( p^2 - 24*s))/12
