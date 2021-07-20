@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define fast()                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);                    \
+    cout.tie(NULL)
+#define debug(x) cout << #x << "=" << x << endl;
+#define debug2(x, y) cout << #x << "=" << x << "," << #y << "=" << y << endl;
+#define endl "\n"
+#define mod 1000000007
+
+//----------Working---Platform-------//
+
+string solve()
+{
+    int n;
+    string s;
+    cin>>n>>s;
+    if(n<12) return "Not Possible";
+    for (int a=0;a<s.size();a++)
+    {
+        if(s[a]=='9' && s.size()-a>=12) return "Possible";
+    }
+    return "Not Possible";
+     
+
+}
+
+signed main() 
+{
+    fast();
+    int t = 1;
+    cin >> t;
+    while (t--)
+    {
+        cout<<solve()<<endl;
+    }
+    return 0;
+}
