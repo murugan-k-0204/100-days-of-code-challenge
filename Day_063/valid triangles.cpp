@@ -9,20 +9,16 @@ using namespace std;
 #define endl "\n"
 #define mod 1000000007
 //----------Working---Platform-------//
-
 void solve(){
-    int a,b , c;
+    int a, b, c;
     cin >> a >> b >> c ;
     if(a+b+c==180) cout << "YES"<<endl;
     else cout << "NO" << endl;
-    
 }
-
 int main(){
     fast();
     int t ; cin>>t;
-    while(t--){
+    while(t--)
         solve();
-    }
     return 0;
 }
